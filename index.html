@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>CarGo — Politique de confidentialité</title>
+<meta name="description" content="Politique de confidentialité de l'application CarGo, conforme au RGPD.">
+<style>
+  :root {
+    --bg: #0f1923;
+    --surface: #1b2432;
+    --text: #e8edf3;
+    --text2: #8896a7;
+    --accent: #3b82f6;
+    --border: #2e3e52;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+    padding: 32px 16px 64px;
+    min-height: 100vh;
+  }
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 40px 36px;
+  }
+  h1 {
+    font-size: 1.6rem;
+    line-height: 1.25;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .logo {
+    display: inline-block;
+    margin-bottom: 18px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  .logo span:nth-child(1) { color: #3b82f6; }
+  .logo span:nth-child(2) { color: #0d9488; }
+  .logo span:nth-child(3) { color: #d97706; }
+  .logo span:nth-child(4) { color: #db2777; }
+  .logo span:nth-child(5) { color: #7c3aed; }
+  .version {
+    color: var(--text2);
+    font-size: 0.86rem;
+    margin-bottom: 28px;
+  }
+  h2 {
+    font-size: 1.18rem;
+    margin: 32px 0 12px;
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 6px;
+  }
+  h3 {
+    font-size: 1rem;
+    margin: 20px 0 8px;
+    color: var(--text);
+  }
+  p, ul, ol {
+    margin-bottom: 14px;
+    color: var(--text);
+    font-size: 0.95rem;
+  }
+  ul, ol { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  a:hover { text-decoration: underline; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 18px;
+    font-size: 0.9rem;
+    overflow-x: auto;
+    display: block;
+  }
+  thead { background: rgba(46,62,82,0.4); }
+  th, td {
+    padding: 10px 12px;
+    text-align: left;
+    border: 1px solid var(--border);
+    vertical-align: top;
+  }
+  th { font-weight: 600; color: var(--text); }
+  td { color: var(--text); }
+  strong { color: var(--text); font-weight: 600; }
+  em { color: var(--text2); }
+  hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 32px 0;
+  }
+  footer {
+    margin-top: 24px;
+    padding-top: 18px;
+    border-top: 1px solid var(--border);
+    color: var(--text2);
+    font-size: 0.82rem;
+    text-align: center;
+  }
+  @media (min-width: 720px) {
+    table { display: table; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<div class="logo"><span>C</span><span>a</span><span>r</span><span>G</span><span>o</span></div>
+
+<h1>Politique de confidentialité</h1>
+<p class="version"><strong>Version 1.0</strong> — En vigueur depuis le 25 mai 2026.</p>
+
+<h2>1. Introduction</h2>
+<p>La présente politique de confidentialité décrit comment l'application mobile <strong>CarGo</strong> (« l'Application ») collecte, utilise et protège les données personnelles de ses utilisateurs (« vous »). Elle est rédigée conformément au Règlement (UE) 2016/679 relatif à la protection des données personnelles (« RGPD ») et à la loi française Informatique et Libertés du 6 janvier 1978 modifiée.</p>
+<p>L'utilisation de l'Application implique l'acceptation des termes de la présente politique. En cas de désaccord, vous êtes invité à ne pas utiliser l'Application.</p>
+
+<h2>2. Responsable du traitement</h2>
+<p>L'Application est éditée par un développeur indépendant, livreur professionnel en activité, agissant à titre personnel.</p>
+<ul>
+  <li><strong>Contact pour toute question relative à la protection des données</strong> : <a href="mailto:lkqmlr.dev@gmail.com">lkqmlr.dev@gmail.com</a></li>
+</ul>
+<p>En l'absence de personne morale dédiée, l'éditeur agit en qualité de responsable du traitement au sens de l'article 4 du RGPD pour les données collectées via l'Application.</p>
+
+<h2>3. Données collectées et traitées</h2>
+
+<h3>3.1 Données fournies directement par vous</h3>
+<table>
+  <thead><tr><th>Donnée</th><th>Finalité</th><th>Base légale</th></tr></thead>
+  <tbody>
+    <tr><td>Adresse email</td><td>Création de compte, authentification, réinitialisation du mot de passe, réception des reçus de paiement Stripe</td><td>Exécution du contrat (Article 6.1.b RGPD)</td></tr>
+    <tr><td>Mot de passe</td><td>Authentification (stocké sous forme hachée, jamais en clair)</td><td>Exécution du contrat</td></tr>
+    <tr><td>Pseudonyme (optionnel)</td><td>Affichage dans votre profil</td><td>Consentement (Article 6.1.a)</td></tr>
+    <tr><td>Adresses de livraison saisies</td><td>Organisation et optimisation de votre tournée</td><td>Exécution du contrat</td></tr>
+    <tr><td>Notes associées à un arrêt (optionnel)</td><td>Aide-mémoire pour vos livraisons</td><td>Exécution du contrat</td></tr>
+    <tr><td>Adresse du point de départ (« base »)</td><td>Calcul d'itinéraire depuis votre dépôt ou domicile</td><td>Exécution du contrat</td></tr>
+  </tbody>
+</table>
+
+<h3>3.2 Données collectées automatiquement</h3>
+<table>
+  <thead><tr><th>Donnée</th><th>Quand</th><th>Finalité</th></tr></thead>
+  <tbody>
+    <tr><td>Position GPS précise</td><td>Uniquement pendant une navigation active (lancée explicitement par vous)</td><td>Centrer la carte, calculer la distance jusqu'au prochain arrêt, détecter l'arrivée (&lt; 80 mètres)</td></tr>
+    <tr><td>Adresse IP, type d'appareil et version d'OS</td><td>Lors des appels au serveur backend</td><td>Limitation de débit (anti-abus), logs techniques</td></tr>
+  </tbody>
+</table>
+
+<h3>3.3 Données traitées de manière éphémère</h3>
+<table>
+  <thead><tr><th>Donnée</th><th>Traitement</th></tr></thead>
+  <tbody>
+    <tr><td>Image d'étiquette colis</td><td>Capturée par la caméra quand vous lancez le scan. Transmise à un service tiers (Google Cloud Vision) pour reconnaissance optique de l'adresse. <strong>L'image n'est jamais stockée sur nos serveurs</strong> : elle est transmise, traitée, et le résultat textuel vous est renvoyé. La requête est instantanée.</td></tr>
+  </tbody>
+</table>
+
+<h3>3.4 Ce que nous ne collectons pas</h3>
+<ul>
+  <li>Votre nom et prénom réels</li>
+  <li>Votre numéro de téléphone</li>
+  <li>Votre date de naissance</li>
+  <li>Vos données bancaires (saisies directement chez Stripe, jamais par CarGo)</li>
+  <li>Vos contacts, votre calendrier, vos photos personnelles</li>
+  <li>Vos données de santé ou de fitness</li>
+  <li>Aucune donnée sensible (origine raciale, opinions politiques, religion, etc.)</li>
+  <li>Aucune donnée publicitaire ni de tracking (pas de Google Analytics, Firebase, Sentry, ni équivalent)</li>
+</ul>
+
+<h2>4. Destinataires de vos données</h2>
+<p>CarGo s'appuie sur les sous-traitants techniques suivants. Aucun de ces tiers n'utilise vos données à des fins de publicité ciblée ou de revente.</p>
+<table>
+  <thead><tr><th>Sous-traitant</th><th>Service rendu</th><th>Données transmises</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Supabase Inc.</strong> (États-Unis)</td><td>Hébergement de base de données + authentification</td><td>Email, mot de passe haché, pseudonyme</td></tr>
+    <tr><td><strong>Stripe Inc.</strong> (États-Unis)</td><td>Traitement des paiements premium</td><td>Email (pas vos données bancaires, traitées directement par Stripe)</td></tr>
+    <tr><td><strong>Google LLC — Cloud Vision API</strong> (États-Unis)</td><td>Reconnaissance optique d'adresses sur étiquettes</td><td>Image colis transmise de manière éphémère lors du scan</td></tr>
+    <tr><td><strong>Google LLC — Maps Platform</strong> (États-Unis)</td><td>Cartographie, géocodage, suggestions d'adresses</td><td>Adresses saisies, sessions de recherche</td></tr>
+    <tr><td><strong>Vercel Inc.</strong> (États-Unis)</td><td>Hébergement du backend API</td><td>Adresse IP, headers HTTP, jetons d'authentification (validés puis non stockés)</td></tr>
+  </tbody>
+</table>
+<p>Aucun partage de vos données avec des tiers à des fins commerciales, publicitaires ou statistiques externes n'est effectué.</p>
+
+<h2>5. Transferts hors de l'Union européenne</h2>
+<p>Les sous-traitants listés ci-dessus sont basés aux États-Unis. Les transferts de données vers ces destinataires sont encadrés par :</p>
+<ul>
+  <li>les <strong>clauses contractuelles types</strong> adoptées par la Commission européenne (décision 2021/914 du 4 juin 2021) ;</li>
+  <li>pour les fournisseurs y adhérant : le <strong>EU-US Data Privacy Framework</strong>, jugé adéquat par la Commission européenne par décision du 10 juillet 2023.</li>
+</ul>
+<p>Ces mécanismes assurent un niveau de protection des données équivalent à celui exigé par le RGPD.</p>
+
+<h2>6. Durée de conservation des données</h2>
+<table>
+  <thead><tr><th>Type de donnée</th><th>Durée</th></tr></thead>
+  <tbody>
+    <tr><td>Compte utilisateur (email, mot de passe haché, pseudonyme)</td><td>Tant que votre compte existe. Suppression sur demande, ou après 3 ans d'inactivité totale.</td></tr>
+    <tr><td>Adresses, arrêts, historique de tournées</td><td>Stockés localement sur votre appareil uniquement. Effacés à la désinstallation de l'Application.</td></tr>
+    <tr><td>Position GPS</td><td>Conservée en mémoire vive uniquement le temps de la navigation active. Perdue à la fin de la session.</td></tr>
+    <tr><td>Image étiquette colis</td><td>Éphémère — non stockée par CarGo. Politique de rétention Google Cloud Vision : 24 heures maximum côté Google.</td></tr>
+    <tr><td>Logs serveur (IP, headers)</td><td>30 jours maximum côté Vercel, conformément à leur politique d'hébergement standard.</td></tr>
+    <tr><td>Données Stripe (statut abonnement)</td><td>Tant que l'abonnement est actif + durée légale comptable (10 ans pour les transactions financières).</td></tr>
+  </tbody>
+</table>
+
+<h2>7. Vos droits</h2>
+<p>Conformément aux articles 15 à 22 du RGPD, vous disposez des droits suivants sur vos données personnelles :</p>
+<ul>
+  <li><strong>Droit d'accès</strong> (Article 15) : obtenir une copie des données vous concernant</li>
+  <li><strong>Droit de rectification</strong> (Article 16) : corriger des données inexactes</li>
+  <li><strong>Droit à l'effacement</strong> (Article 17, dit « droit à l'oubli ») : demander la suppression de vos données</li>
+  <li><strong>Droit à la limitation du traitement</strong> (Article 18)</li>
+  <li><strong>Droit à la portabilité</strong> (Article 20) : recevoir vos données dans un format structuré</li>
+  <li><strong>Droit d'opposition</strong> (Article 21)</li>
+  <li><strong>Droit de retirer votre consentement</strong> à tout moment, pour les traitements fondés sur ce consentement</li>
+</ul>
+
+<h3>Exercer vos droits</h3>
+<p>Adressez votre demande par email à <strong><a href="mailto:lkqmlr.dev@gmail.com">lkqmlr.dev@gmail.com</a></strong>. Nous nous engageons à y répondre dans un délai d'un mois, conformément à l'article 12 du RGPD.</p>
+
+<h3>Réclamation</h3>
+<p>Vous disposez également du droit d'introduire une réclamation auprès de la <strong>Commission Nationale de l'Informatique et des Libertés (CNIL)</strong> : <a href="https://www.cnil.fr" target="_blank" rel="noopener">www.cnil.fr</a>.</p>
+
+<h2>8. Stockage local sur votre appareil</h2>
+<p>CarGo utilise les mécanismes natifs de stockage local de votre appareil (<code>localStorage</code> côté webview, <code>@capacitor/preferences</code> côté Android natif) pour mémoriser :</p>
+<ul>
+  <li>la liste de vos arrêts en cours</li>
+  <li>votre point de départ favori</li>
+  <li>l'historique de vos tournées</li>
+  <li>vos préférences d'affichage (compteur du tutoriel, dernier code postal de scan)</li>
+</ul>
+<p>Ces données restent <strong>exclusivement sur votre appareil</strong>. Elles ne sont jamais transmises à un serveur. La désinstallation de l'Application les efface définitivement.</p>
+<p>CarGo n'utilise <strong>aucun cookie publicitaire</strong> ni traceur tiers.</p>
+
+<h2>9. Sécurité</h2>
+<p>Les mesures suivantes protègent vos données :</p>
+<ul>
+  <li><strong>Chiffrement en transit</strong> : toutes les communications réseau utilisent HTTPS avec TLS 1.2 minimum.</li>
+  <li><strong>Mots de passe</strong> : stockés uniquement sous forme hachée (bcrypt) côté Supabase, jamais en clair.</li>
+  <li><strong>Row Level Security (RLS)</strong> : politiques actives sur les tables Supabase pour garantir qu'un utilisateur ne peut accéder qu'à ses propres données.</li>
+  <li><strong>Webhook signing</strong> : les notifications Stripe entrantes sont vérifiées par signature cryptographique.</li>
+  <li><strong>Pas de stockage local de jetons sensibles</strong> : les sessions Supabase utilisent des JWT à durée limitée, renouvelés automatiquement.</li>
+</ul>
+<p>Aucun système n'est infaillible. En cas de violation de données affectant vos informations, vous serez informé dans les 72 heures suivant notre prise de connaissance, conformément à l'article 34 du RGPD.</p>
+
+<h2>10. Mineurs</h2>
+<p>CarGo est destinée aux livreurs professionnels et n'est <strong>pas conçue pour les utilisateurs de moins de 16 ans</strong>. Aucune collecte de données auprès de mineurs n'est intentionnelle. Si vous avez moins de 16 ans, vous êtes invité à ne pas utiliser l'Application.</p>
+<p>Si vous êtes parent ou tuteur légal et constatez qu'un mineur a fourni des données via l'Application, contactez-nous à <a href="mailto:lkqmlr.dev@gmail.com">lkqmlr.dev@gmail.com</a> pour suppression immédiate.</p>
+
+<h2>11. Modifications de la présente politique</h2>
+<p>La présente politique peut être amenée à évoluer pour refléter des changements techniques, légaux ou de fonctionnalités de l'Application. Toute modification substantielle sera notifiée :</p>
+<ul>
+  <li>par mise à jour de la date « En vigueur depuis » en haut de ce document ;</li>
+  <li>pour les modifications majeures (nouvelle catégorie de données, nouveau destinataire, changement de finalité) : par notification dans l'Application lors de votre prochaine connexion.</li>
+</ul>
+<p>L'utilisation continue de l'Application après notification vaut acceptation de la nouvelle version.</p>
+
+<h2>12. Contact</h2>
+<p>Pour toute question, demande relative à vos droits, ou signalement d'un incident :</p>
+<p>📧 <strong><a href="mailto:lkqmlr.dev@gmail.com">lkqmlr.dev@gmail.com</a></strong></p>
+<p>Délai de réponse maximal : un mois.</p>
+
+<footer>
+  Document rédigé conformément au RGPD (Règlement UE 2016/679), à la loi Informatique et Libertés (1978 modifiée) et aux exigences des stores Apple App Store et Google Play.
+</footer>
+
+</main>
+</body>
+</html>
