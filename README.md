@@ -1,8 +1,8 @@
-# cargo-policy
+# cargoV1-policy
 
 Documents légaux publics de l'application **CarGo** :
 
-- **Politique de confidentialité** : [https://lkqmlr.github.io/cargo-policy/](https://lkqmlr.github.io/cargo-policy/)
+- **Politique de confidentialité** : [https://lkqmlr.github.io/cargoV1-policy/](https://lkqmlr.github.io/cargoV1-policy/)
 
 ## Structure du repo
 
