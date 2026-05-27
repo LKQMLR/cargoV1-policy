@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>CarGo — Support</title>
+<meta name="description" content="Page de support de l'application CarGo : FAQ, contact, dépannage.">
+<style>
+  :root {
+    --bg: #0f1923;
+    --surface: #1b2432;
+    --text: #e8edf3;
+    --text2: #8896a7;
+    --accent: #3b82f6;
+    --border: #2e3e52;
+    --green: #22c55e;
+    --yellow: #fbbf24;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+    padding: 32px 16px 64px;
+    min-height: 100vh;
+  }
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 40px 36px;
+  }
+  h1 {
+    font-size: 1.6rem;
+    line-height: 1.25;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  .logo {
+    display: inline-block;
+    margin-bottom: 18px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  .logo span:nth-child(1) { color: #3b82f6; }
+  .logo span:nth-child(2) { color: #0d9488; }
+  .logo span:nth-child(3) { color: #d97706; }
+  .logo span:nth-child(4) { color: #db2777; }
+  .logo span:nth-child(5) { color: #7c3aed; }
+  .version {
+    color: var(--text2);
+    font-size: 0.86rem;
+    margin-bottom: 28px;
+  }
+  h2 {
+    font-size: 1.18rem;
+    margin: 32px 0 12px;
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 6px;
+  }
+  details {
+    background: rgba(46,62,82,0.18);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin-bottom: 8px;
+    padding: 0;
+    overflow: hidden;
+  }
+  details[open] {
+    background: rgba(46,62,82,0.3);
+  }
+  summary {
+    padding: 14px 18px;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--text);
+    font-size: 0.95rem;
+    list-style: none;
+    position: relative;
+    transition: background 0.15s;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after {
+    content: '+';
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.3rem;
+    color: var(--accent);
+    font-weight: 400;
+    transition: transform 0.15s;
+  }
+  details[open] summary::after {
+    content: '−';
+  }
+  summary:hover { background: rgba(46,62,82,0.4); }
+  details > div.answer {
+    padding: 0 18px 16px;
+    color: var(--text);
+    font-size: 0.92rem;
+  }
+  details > div.answer p { margin-bottom: 10px; }
+  details > div.answer p:last-child { margin-bottom: 0; }
+  p, ul, ol {
+    margin-bottom: 14px;
+    color: var(--text);
+    font-size: 0.95rem;
+  }
+  ul, ol { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  a:hover { text-decoration: underline; }
+  strong { color: var(--text); font-weight: 600; }
+  code {
+    background: rgba(46,62,82,0.5);
+    border: 1px solid var(--border);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'SF Mono', Menlo, monospace;
+    font-size: 0.86em;
+    color: var(--yellow);
+  }
+  .contact-card {
+    background: rgba(34,197,94,0.06);
+    border: 1px solid rgba(34,197,94,0.3);
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin: 18px 0 24px;
+  }
+  .contact-card h3 {
+    color: var(--green);
+    margin-bottom: 8px;
+    font-size: 1rem;
+  }
+  .contact-card a {
+    font-size: 1.05rem;
+    color: var(--green);
+    font-weight: 600;
+  }
+  footer {
+    margin-top: 32px;
+    padding-top: 18px;
+    border-top: 1px solid var(--border);
+    color: var(--text2);
+    font-size: 0.82rem;
+    text-align: center;
+  }
+  .footer-links {
+    margin-top: 8px;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+</style>
+</head>
+<body>
+<main>
+
+<div class="logo"><span>C</span><span>a</span><span>r</span><span>G</span><span>o</span></div>
+
+<h1>Support</h1>
+<p class="version">Aide, dépannage et contact pour l'application CarGo.</p>
+
+<div class="contact-card">
+  <h3>📧 Contact direct</h3>
+  <p>Pour toute question, signalement d'un bug ou demande spécifique :</p>
+  <p><a href="mailto:lkqmlr.dev@gmail.com">lkqmlr.dev@gmail.com</a></p>
+  <p style="font-size:0.85rem;color:var(--text2);margin-top:8px;">Délai de réponse moyen : 24-48 heures ouvrées.</p>
+</div>
+
+<h2>Questions fréquentes</h2>
+
+<details>
+  <summary>Comment ajouter ma première adresse ?</summary>
+  <div class="answer">
+    <p><strong>1.</strong> Sur l'écran d'accueil, touche l'<strong>ellipsis (•••)</strong> sous le logo CarGo en haut pour déployer le panneau.</p>
+    <p><strong>2.</strong> Onglet <strong>Base</strong> : définis ton point de départ (ton dépôt ou ton domicile). Tape l'adresse, sélectionne une suggestion Google, valide.</p>
+    <p><strong>3.</strong> Onglet <strong>Stops</strong> : tape une adresse de livraison ou clique l'icône scanner pour photographier une étiquette de colis. L'app détecte l'adresse automatiquement.</p>
+    <p><strong>4.</strong> Sur la carte, clique le marqueur gris du nouvel arrêt pour lui attribuer un secteur (1 à 5) et valider.</p>
+  </div>
+</details>
+
+<details>
+  <summary>L'app me dit « Aucun itinéraire calculé ». Que faire ?</summary>
+  <div class="answer">
+    <p>Pour lancer l'optimisation, deux conditions :</p>
+    <ul>
+      <li>Avoir défini un <strong>point de départ</strong> dans l'onglet Base</li>
+      <li>Avoir <strong>au moins une adresse validée</strong> (avec un secteur attribué, pas un marqueur gris)</li>
+    </ul>
+    <p>Une fois ces deux conditions remplies, le bouton « Optimiser la tournée » s'active. Tu peux le lancer depuis l'onglet "Ma tournée" ou directement depuis l'onglet "Itinéraire".</p>
+  </div>
+</details>
+
+<details>
+  <summary>Le scan d'étiquette ne détecte pas l'adresse correctement</summary>
+  <div class="answer">
+    <p>L'OCR fonctionne mieux quand :</p>
+    <ul>
+      <li>L'étiquette est <strong>nette et bien éclairée</strong></li>
+      <li>Tu cadres uniquement la zone d'adresse (pas tout le colis)</li>
+      <li>Le texte est lisible à l'œil (pas froissé, pas trop petit)</li>
+    </ul>
+    <p>Si la détection se trompe, tu peux corriger manuellement le numéro et la rue dans la modale de scan avant de valider. Le code postal est mémorisé entre les scans pour faciliter la saisie.</p>
+    <p>Si l'app affiche « Service OCR non configuré » : c'est un problème côté serveur, contacte le support.</p>
+  </div>
+</details>
+
+<details>
+  <summary>La géolocalisation GPS ne fonctionne pas</summary>
+  <div class="answer">
+    <p>Vérifie d'abord que l'autorisation est accordée :</p>
+    <ul>
+      <li><strong>Android</strong> : Paramètres → Apps → CarGo → Autorisations → Localisation → activer "Pendant l'utilisation"</li>
+      <li><strong>iOS</strong> : Réglages → Confidentialité et sécurité → Service de localisation → CarGo → activer "Lorsque l'app est active"</li>
+    </ul>
+    <p>CarGo ne suit ta position <strong>que pendant une navigation active</strong>. Elle n'utilise jamais ta position en arrière-plan.</p>
+    <p>Si tu passes sur Google Maps externe pendant la navigation, la position peut être suspendue par le système après ~30 secondes. C'est normal — revenir sur CarGo réactive le suivi.</p>
+  </div>
+</details>
+
+<details>
+  <summary>J'ai oublié mon mot de passe</summary>
+  <div class="answer">
+    <p>Sur l'écran de connexion (onglet Compte) :</p>
+    <ol>
+      <li>Clique sur <strong>« Mot de passe oublié ? »</strong> sous le formulaire</li>
+      <li>Entre ton adresse email</li>
+      <li>Tu recevras un email avec un lien de réinitialisation</li>
+      <li>Clique le lien et choisis un nouveau mot de passe</li>
+    </ol>
+    <p>Si tu ne reçois pas l'email, vérifie ton dossier Spam. L'expéditeur est <code>noreply@mail.app.supabase.io</code>.</p>
+  </div>
+</details>
+
+<details>
+  <summary>Je suis Premium mais mes limites freemium ne sont pas levées</summary>
+  <div class="answer">
+    <p>Le statut Premium est vérifié toutes les 10 minutes en arrière-plan, ou immédiatement après le paiement. Si l'app n'a pas reconnu ton abonnement :</p>
+    <ol>
+      <li>Déconnecte-toi puis reconnecte-toi → force la re-vérification</li>
+      <li>Ferme et rouvre l'app complètement</li>
+      <li>Si le problème persiste plus de 10 minutes après le paiement, contacte le support avec ton email d'abonnement</li>
+    </ol>
+    <p>Tu peux aussi vérifier ton statut d'abonnement en cliquant <strong>« Gérer mon abonnement »</strong> dans l'onglet Compte — cela ouvre le portail client Stripe avec ton historique de facturation.</p>
+  </div>
+</details>
+
+<details>
+  <summary>Comment annuler mon abonnement Premium ?</summary>
+  <div class="answer">
+    <p>Tout se fait via le portail client Stripe, accessible depuis l'app :</p>
+    <ol>
+      <li>Onglet <strong>Compte</strong> → clique <strong>« Gérer l'abonnement »</strong></li>
+      <li>Tu es redirigé vers le portail Stripe sécurisé</li>
+      <li>Clique <strong>« Annuler le plan »</strong></li>
+      <li>Confirme</li>
+    </ol>
+    <p>L'annulation est effective à la fin de la période payée (tu gardes Premium jusqu'à cette date). Aucune pénalité, aucun engagement.</p>
+  </div>
+</details>
+
+<details>
+  <summary>Comment supprimer mon compte et toutes mes données ?</summary>
+  <div class="answer">
+    <p>Envoie un email à <a href="mailto:lkqmlr.dev@gmail.com">lkqmlr.dev@gmail.com</a> depuis l'adresse associée à ton compte CarGo, avec pour objet <strong>« Suppression de compte »</strong>.</p>
+    <p>Conformément au RGPD (Article 17, droit à l'oubli), nous procéderons à la suppression dans un délai d'un mois :</p>
+    <ul>
+      <li>Données du compte (email, pseudonyme, identifiant Supabase)</li>
+      <li>Annulation de tout abonnement Stripe actif</li>
+      <li>Demande de suppression de ton enregistrement client à Stripe</li>
+    </ul>
+    <p>Les données stockées localement sur ton appareil (tournées, historique) s'effacent automatiquement à la désinstallation de l'app.</p>
+    <p>Plus de détails sur tes droits dans la <a href="/cargoV1-policy/">politique de confidentialité</a>.</p>
+  </div>
+</details>
+
+<details>
+  <summary>Quelles sont les différences entre Free et Premium ?</summary>
+  <div class="answer">
+    <p><strong>Plan gratuit :</strong></p>
+    <ul>
+      <li>10 adresses maximum par tournée</li>
+      <li>2 secteurs actifs (S1, S2)</li>
+      <li>1 ancre maximum par tournée</li>
+      <li>Toutes les autres fonctionnalités (scan, optimisation, navigation GPS, check-list de chargement) sont incluses</li>
+    </ul>
+    <p><strong>Premium :</strong></p>
+    <ul>
+      <li>Adresses illimitées</li>
+      <li>5 secteurs (S1 à S5)</li>
+      <li>Ancres illimitées</li>
+      <li>Aucune publicité (l'app gratuite n'en affiche pas non plus, c'est notre engagement)</li>
+    </ul>
+  </div>
+</details>
+
+<details>
+  <summary>L'app fonctionne-t-elle hors-ligne ?</summary>
+  <div class="answer">
+    <p>Partiellement. Voici ce qui fonctionne <strong>sans internet</strong> :</p>
+    <ul>
+      <li>Affichage de l'app + UI</li>
+      <li>Vue de tes adresses déjà saisies</li>
+      <li>GPS (capteur de ton téléphone)</li>
+      <li>Historique des tournées sauvegardées</li>
+    </ul>
+    <p>Ce qui <strong>nécessite internet</strong> :</p>
+    <ul>
+      <li>Cartes Google Maps (chargement des tiles)</li>
+      <li>Suggestions d'adresses Google + géocodage</li>
+      <li>Optimisation de tournée (utilise Google Routes API)</li>
+      <li>Connexion / vérification de l'abonnement Premium</li>
+      <li>Scan OCR d'étiquette (Google Cloud Vision)</li>
+    </ul>
+    <p>Pendant une tournée, si tu passes dans une zone sans 4G/5G, la navigation déjà calculée continue de marcher (le GPS local n'a pas besoin d'internet pour fonctionner).</p>
+  </div>
+</details>
+
+<details>
+  <summary>Sur quelles versions d'iOS / Android l'app fonctionne-t-elle ?</summary>
+  <div class="answer">
+    <p><strong>iOS</strong> : 13.0 minimum (tous les iPhones encore supportés par Apple)</p>
+    <p><strong>Android</strong> : 7.0 minimum (Nougat, sortie 2016)</p>
+    <p>Sur des modèles très anciens, certaines fonctionnalités peuvent être plus lentes (notamment l'OCR de scan colis qui demande un appareil photo récent). La navigation GPS et l'optimisation de tournée fonctionnent partout.</p>
+  </div>
+</details>
+
+<h2>Signaler un bug</h2>
+<p>Si tu rencontres un comportement anormal :</p>
+<ol>
+  <li>Note <strong>la version de l'app</strong> (visible dans Compte → À propos)</li>
+  <li>Note <strong>ton modèle de téléphone</strong> et version OS</li>
+  <li>Décris ce qui s'est passé et ce que tu attendais à la place</li>
+  <li>Envoie le tout à <a href="mailto:lkqmlr.dev@gmail.com">lkqmlr.dev@gmail.com</a></li>
+</ol>
+<p>Capture d'écran ou vidéo très appréciée si tu en as.</p>
+
+<h2>Suggestions et améliorations</h2>
+<p>CarGo est développée par un livreur, pour les livreurs. Toute remontée du terrain est précieuse — même les petites idées (« ça serait bien si... »).</p>
+<p>Envoie tes suggestions à <a href="mailto:lkqmlr.dev@gmail.com">lkqmlr.dev@gmail.com</a> avec « <strong>Suggestion</strong> » dans l'objet.</p>
+
+<footer>
+  CarGo — Application mobile pour livreurs professionnels.
+  <div class="footer-links">
+    <a href="/cargoV1-policy/">Politique de confidentialité</a>
+    <a href="mailto:lkqmlr.dev@gmail.com">Contact</a>
+  </div>
+</footer>
+
+</main>
+</body>
+</html>

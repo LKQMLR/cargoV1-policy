@@ -7,8 +7,11 @@ Documents légaux publics de l'application **CarGo** :
 ## Structure du repo
 
 - `index.html` — politique de confidentialité, version publique stylée (RGPD-compliant, en français)
+- `support.html` — page de support : FAQ, dépannage, contact
 
-URL à fournir aux stores Apple App Store et Google Play Console lors de la soumission.
+URLs à fournir aux stores lors de la soumission :
+- **Privacy Policy URL** : https://lkqmlr.github.io/cargoV1-policy/
+- **Support URL** : https://lkqmlr.github.io/cargoV1-policy/support.html
 
 ## Mise à jour
 
