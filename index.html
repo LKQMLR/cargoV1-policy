@@ -123,7 +123,7 @@
 <div class="logo"><span>C</span><span>a</span><span>r</span><span>G</span><span>o</span></div>
 
 <h1>Politique de confidentialité</h1>
-<p class="version"><strong>Version 1.0</strong> — En vigueur depuis le 25 mai 2026.</p>
+<p class="version"><strong>Version 1.1</strong> — En vigueur depuis le 14 juin 2026.</p>
 
 <h2>1. Introduction</h2>
 <p>La présente politique de confidentialité décrit comment l'application mobile <strong>CarGo</strong> (« l'Application ») collecte, utilise et protège les données personnelles de ses utilisateurs (« vous »). Elle est rédigée conformément au Règlement (UE) 2016/679 relatif à la protection des données personnelles (« RGPD ») et à la loi française Informatique et Libertés du 6 janvier 1978 modifiée.</p>
@@ -157,6 +157,7 @@
   <tbody>
     <tr><td>Position GPS précise</td><td>Uniquement pendant une navigation active (lancée explicitement par vous)</td><td>Centrer la carte, calculer la distance jusqu'au prochain arrêt, détecter l'arrivée (&lt; 80 mètres)</td></tr>
     <tr><td>Adresse IP, type d'appareil et version d'OS</td><td>Lors des appels au serveur backend</td><td>Limitation de débit (anti-abus), logs techniques</td></tr>
+    <tr><td>Langue, pays (déduit du réglage de votre appareil), date de création et date de dernière connexion du compte</td><td>À la connexion</td><td>Mémoriser votre langue entre vos appareils ; statistiques internes anonymisées (répartition langue / pays) pour améliorer l'application</td></tr>
   </tbody>
 </table>
 
@@ -206,7 +207,7 @@
 <table>
   <thead><tr><th>Type de donnée</th><th>Durée</th></tr></thead>
   <tbody>
-    <tr><td>Compte utilisateur (email, mot de passe haché, pseudonyme)</td><td>Tant que votre compte existe. Suppression sur demande, ou après 3 ans d'inactivité totale.</td></tr>
+    <tr><td>Compte utilisateur (email, mot de passe haché, pseudonyme, langue, pays, dates de connexion)</td><td>Tant que votre compte existe. Suppression possible <strong>directement dans l'application</strong> (onglet Compte → Gestion du compte → Supprimer le compte), sur demande par email, ou après 3 ans d'inactivité totale.</td></tr>
     <tr><td>Adresses, arrêts, historique de tournées</td><td>Stockés localement sur votre appareil uniquement. Effacés à la désinstallation de l'Application.</td></tr>
     <tr><td>Position GPS</td><td>Conservée en mémoire vive uniquement le temps de la navigation active. Perdue à la fin de la session.</td></tr>
     <tr><td>Image étiquette colis</td><td>Éphémère — non stockée par CarGo. Politique de rétention Google Cloud Vision : 24 heures maximum côté Google.</td></tr>
