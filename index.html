@@ -142,7 +142,7 @@
 <table>
   <thead><tr><th>Donnée</th><th>Finalité</th><th>Base légale</th></tr></thead>
   <tbody>
-    <tr><td>Adresse email</td><td>Création de compte, authentification, réinitialisation du mot de passe, réception des reçus de paiement Stripe</td><td>Exécution du contrat (Article 6.1.b RGPD)</td></tr>
+    <tr><td>Adresse email</td><td>Création de compte, authentification, réinitialisation du mot de passe</td><td>Exécution du contrat (Article 6.1.b RGPD)</td></tr>
     <tr><td>Mot de passe</td><td>Authentification (stocké sous forme hachée, jamais en clair)</td><td>Exécution du contrat</td></tr>
     <tr><td>Pseudonyme (optionnel)</td><td>Affichage dans votre profil</td><td>Consentement (Article 6.1.a)</td></tr>
     <tr><td>Adresses de livraison saisies</td><td>Organisation et optimisation de votre tournée</td><td>Exécution du contrat</td></tr>
@@ -174,7 +174,7 @@
   <li>Votre nom et prénom réels</li>
   <li>Votre numéro de téléphone</li>
   <li>Votre date de naissance</li>
-  <li>Vos données bancaires (saisies directement chez Stripe, jamais par CarGo)</li>
+  <li>Vos données bancaires (gérées directement par Google Play lors d'un achat, jamais par CarGo)</li>
   <li>Vos contacts, votre calendrier, vos photos personnelles</li>
   <li>Vos données de santé ou de fitness</li>
   <li>Aucune donnée sensible (origine raciale, opinions politiques, religion, etc.)</li>
@@ -187,7 +187,8 @@
   <thead><tr><th>Sous-traitant</th><th>Service rendu</th><th>Données transmises</th></tr></thead>
   <tbody>
     <tr><td><strong>Supabase Inc.</strong> (États-Unis)</td><td>Hébergement de base de données + authentification</td><td>Email, mot de passe haché, pseudonyme</td></tr>
-    <tr><td><strong>Stripe Inc.</strong> (États-Unis)</td><td>Traitement des paiements premium</td><td>Email (pas vos données bancaires, traitées directement par Stripe)</td></tr>
+    <tr><td><strong>Google LLC — Google Play Billing</strong> (États-Unis)</td><td>Traitement des paiements et des abonnements premium</td><td>Le paiement est géré par votre compte Google Play — CarGo ne reçoit aucune donnée bancaire</td></tr>
+    <tr><td><strong>RevenueCat, Inc.</strong> (États-Unis)</td><td>Gestion technique des abonnements (validation des achats, statut premium)</td><td>Identifiant de compte (anonyme) et statut d'abonnement — aucune donnée bancaire</td></tr>
     <tr><td><strong>Google LLC — Cloud Vision API</strong> (États-Unis)</td><td>Reconnaissance optique d'adresses sur étiquettes</td><td>Image colis transmise de manière éphémère lors du scan</td></tr>
     <tr><td><strong>Google LLC — Maps Platform</strong> (États-Unis)</td><td>Cartographie, géocodage, suggestions d'adresses</td><td>Adresses saisies, sessions de recherche</td></tr>
     <tr><td><strong>Vercel Inc.</strong> (États-Unis)</td><td>Hébergement du backend API</td><td>Adresse IP, headers HTTP, jetons d'authentification (validés puis non stockés)</td></tr>
@@ -212,7 +213,7 @@
     <tr><td>Position GPS</td><td>Conservée en mémoire vive uniquement le temps de la navigation active. Perdue à la fin de la session.</td></tr>
     <tr><td>Image étiquette colis</td><td>Éphémère — non stockée par CarGo. Politique de rétention Google Cloud Vision : 24 heures maximum côté Google.</td></tr>
     <tr><td>Logs serveur (IP, headers)</td><td>30 jours maximum côté Vercel, conformément à leur politique d'hébergement standard.</td></tr>
-    <tr><td>Données Stripe (statut abonnement)</td><td>Tant que l'abonnement est actif + durée légale comptable (10 ans pour les transactions financières).</td></tr>
+    <tr><td>Statut d'abonnement (via Google Play / RevenueCat)</td><td>Tant que l'abonnement est actif + durée légale comptable (10 ans pour les transactions financières).</td></tr>
   </tbody>
 </table>
 
@@ -251,7 +252,7 @@
   <li><strong>Chiffrement en transit</strong> : toutes les communications réseau utilisent HTTPS avec TLS 1.2 minimum.</li>
   <li><strong>Mots de passe</strong> : stockés uniquement sous forme hachée (bcrypt) côté Supabase, jamais en clair.</li>
   <li><strong>Row Level Security (RLS)</strong> : politiques actives sur les tables Supabase pour garantir qu'un utilisateur ne peut accéder qu'à ses propres données.</li>
-  <li><strong>Webhook signing</strong> : les notifications Stripe entrantes sont vérifiées par signature cryptographique.</li>
+  <li><strong>Validation des achats</strong> : les abonnements sont vérifiés directement auprès de Google Play Billing (validation côté store via RevenueCat).</li>
   <li><strong>Pas de stockage local de jetons sensibles</strong> : les sessions Supabase utilisent des JWT à durée limitée, renouvelés automatiquement.</li>
 </ul>
 <p>Aucun système n'est infaillible. En cas de violation de données affectant vos informations, vous serez informé dans les 72 heures suivant notre prise de connaissance, conformément à l'article 34 du RGPD.</p>
