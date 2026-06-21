@@ -1,6 +1,6 @@
 # cargoV1-policy
 
-Documents légaux publics de l'application **CarGo** :
+Documents légaux publics de l'application **ATEQO** :
 
 - **Politique de confidentialité** : [https://lkqmlr.github.io/cargoV1-policy/](https://lkqmlr.github.io/cargoV1-policy/)
 

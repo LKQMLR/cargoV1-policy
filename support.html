@@ -4,24 +4,30 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="index, follow">
-<title>CarGo — Support</title>
-<meta name="description" content="Page de support de l'application CarGo : FAQ, contact, dépannage.">
+<title>ATEQO — Support</title>
+<meta name="description" content="Page de support de l'application ATEQO : FAQ, contact, dépannage.">
 <style>
   :root {
-    --bg: #0f1923;
-    --surface: #1b2432;
-    --text: #e8edf3;
-    --text2: #8896a7;
-    --accent: #3b82f6;
-    --border: #2e3e52;
-    --green: #22c55e;
-    --yellow: #fbbf24;
+    /* Palette ATEQO — reprise des tokens de l'app (theme clair).
+       primaire = fond canvas/entete · secondaire = surface des panneaux. */
+    --bg: #f1f4f7;
+    --surface: #ffffff;
+    --surface2: #f6f8fb;
+    --text: #0f1923;
+    --text2: #515151;
+    --text3: #8a929b;
+    --accent: #2563eb;
+    --border: #e3e7ec;
+    --green: #16a34a;
+    --yellow: #b45309;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
   body {
     font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
-    background: var(--bg);
+    /* Degrade de l'entete de l'app (blanc -> bleu-gris tres clair). */
+    background: linear-gradient(160deg, #ffffff, #eef2f7) no-repeat fixed;
+    background-color: var(--bg);
     color: var(--text);
     line-height: 1.65;
     padding: 32px 16px 64px;
@@ -33,6 +39,7 @@
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(15,25,35,.06);
     padding: 40px 36px;
   }
   h1 {
@@ -66,7 +73,7 @@
     padding-bottom: 6px;
   }
   details {
-    background: rgba(46,62,82,0.18);
+    background: var(--surface2);
     border: 1px solid var(--border);
     border-radius: 8px;
     margin-bottom: 8px;
@@ -74,7 +81,7 @@
     overflow: hidden;
   }
   details[open] {
-    background: rgba(46,62,82,0.3);
+    background: rgba(15,25,35,0.04);
   }
   summary {
     padding: 14px 18px;
@@ -101,7 +108,7 @@
   details[open] summary::after {
     content: '−';
   }
-  summary:hover { background: rgba(46,62,82,0.4); }
+  summary:hover { background: rgba(15,25,35,0.05); }
   details > div.answer {
     padding: 0 18px 16px;
     color: var(--text);
@@ -123,7 +130,7 @@
   a:hover { text-decoration: underline; }
   strong { color: var(--text); font-weight: 600; }
   code {
-    background: rgba(46,62,82,0.5);
+    background: #fdf3e3;
     border: 1px solid var(--border);
     padding: 2px 6px;
     border-radius: 4px;
@@ -168,10 +175,10 @@
 <body>
 <main>
 
-<div class="logo"><span>C</span><span>a</span><span>r</span><span>G</span><span>o</span></div>
+<div class="logo"><span>A</span><span>T</span><span>E</span><span>Q</span><span>O</span></div>
 
 <h1>Support</h1>
-<p class="version">Aide, dépannage et contact pour l'application CarGo.</p>
+<p class="version">Aide, dépannage et contact pour l'application ATEQO.</p>
 
 <div class="contact-card">
   <h3>📧 Contact direct</h3>
@@ -185,7 +192,7 @@
 <details>
   <summary>Comment ajouter ma première adresse ?</summary>
   <div class="answer">
-    <p><strong>1.</strong> Sur l'écran d'accueil, touche l'<strong>ellipsis (•••)</strong> sous le logo CarGo en haut pour déployer le panneau.</p>
+    <p><strong>1.</strong> Sur l'écran d'accueil, touche l'<strong>ellipsis (•••)</strong> sous le logo ATEQO en haut pour déployer le panneau.</p>
     <p><strong>2.</strong> Onglet <strong>Base</strong> : définis ton point de départ (ton dépôt ou ton domicile). Tape l'adresse, sélectionne une suggestion Google, valide.</p>
     <p><strong>3.</strong> Onglet <strong>Stops</strong> : tape une adresse de livraison ou clique l'icône scanner pour photographier une étiquette de colis. L'app détecte l'adresse automatiquement.</p>
     <p><strong>4.</strong> Sur la carte, clique le marqueur gris du nouvel arrêt pour lui attribuer un secteur (1 à 5) et valider.</p>
@@ -223,11 +230,11 @@
   <div class="answer">
     <p>Vérifie d'abord que l'autorisation est accordée :</p>
     <ul>
-      <li><strong>Android</strong> : Paramètres → Apps → CarGo → Autorisations → Localisation → activer "Pendant l'utilisation"</li>
-      <li><strong>iOS</strong> : Réglages → Confidentialité et sécurité → Service de localisation → CarGo → activer "Lorsque l'app est active"</li>
+      <li><strong>Android</strong> : Paramètres → Apps → ATEQO → Autorisations → Localisation → activer "Pendant l'utilisation"</li>
+      <li><strong>iOS</strong> : Réglages → Confidentialité et sécurité → Service de localisation → ATEQO → activer "Lorsque l'app est active"</li>
     </ul>
-    <p>CarGo ne suit ta position <strong>que pendant une navigation active</strong>. Elle n'utilise jamais ta position en arrière-plan.</p>
-    <p>Si tu passes sur Google Maps externe pendant la navigation, la position peut être suspendue par le système après ~30 secondes. C'est normal — revenir sur CarGo réactive le suivi.</p>
+    <p>ATEQO ne suit ta position <strong>que pendant une navigation active</strong>. Elle n'utilise jamais ta position en arrière-plan.</p>
+    <p>Si tu passes sur Google Maps externe pendant la navigation, la position peut être suspendue par le système après ~30 secondes. C'est normal — revenir sur ATEQO réactive le suivi.</p>
   </div>
 </details>
 
@@ -265,7 +272,7 @@
     <ol>
       <li>Onglet <strong>Compte</strong> → clique <strong>« Gérer l'abonnement »</strong></li>
       <li>Tu es redirigé vers la page Abonnements de Google Play</li>
-      <li>Sélectionne CarGo puis clique <strong>« Annuler l'abonnement »</strong></li>
+      <li>Sélectionne ATEQO puis clique <strong>« Annuler l'abonnement »</strong></li>
       <li>Confirme</li>
     </ol>
     <p>L'annulation est effective à la fin de la période payée (tu gardes Premium jusqu'à cette date). Aucune pénalité, aucun engagement.</p>
@@ -275,7 +282,7 @@
 <details>
   <summary>Comment supprimer mon compte et toutes mes données ?</summary>
   <div class="answer">
-    <p>Envoie un email à <a href="mailto:cargo.app.admin@gmail.com">cargo.app.admin@gmail.com</a> depuis l'adresse associée à ton compte CarGo, avec pour objet <strong>« Suppression de compte »</strong>.</p>
+    <p>Envoie un email à <a href="mailto:cargo.app.admin@gmail.com">cargo.app.admin@gmail.com</a> depuis l'adresse associée à ton compte ATEQO, avec pour objet <strong>« Suppression de compte »</strong>.</p>
     <p>Conformément au RGPD (Article 17, droit à l'oubli), nous procéderons à la suppression dans un délai d'un mois :</p>
     <ul>
       <li>Données du compte (email, pseudonyme, identifiant Supabase)</li>
@@ -349,11 +356,11 @@
 <p>Capture d'écran ou vidéo très appréciée si tu en as.</p>
 
 <h2>Suggestions et améliorations</h2>
-<p>CarGo est développée par un livreur, pour les livreurs. Toute remontée du terrain est précieuse — même les petites idées (« ça serait bien si... »).</p>
+<p>ATEQO est développée par un livreur, pour les livreurs. Toute remontée du terrain est précieuse — même les petites idées (« ça serait bien si... »).</p>
 <p>Envoie tes suggestions à <a href="mailto:cargo.app.admin@gmail.com">cargo.app.admin@gmail.com</a> avec « <strong>Suggestion</strong> » dans l'objet.</p>
 
 <footer>
-  CarGo — Application mobile pour livreurs professionnels.
+  ATEQO — Application mobile pour livreurs professionnels.
   <div class="footer-links">
     <a href="/cargoV1-policy/">Politique de confidentialité</a>
     <a href="mailto:cargo.app.admin@gmail.com">Contact</a>
