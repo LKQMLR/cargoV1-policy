@@ -6,6 +6,8 @@
 <meta name="robots" content="index, follow">
 <title>ATEQO — Politique de confidentialité</title>
 <meta name="description" content="Politique de confidentialité de l'application ATEQO, conforme au RGPD.">
+<link rel="alternate" hreflang="fr" href="index.html">
+<link rel="alternate" hreflang="en" href="index.en.html">
 <style>
   :root {
     /* Palette ATEQO — reprise des tokens de l'app (theme clair).
@@ -58,6 +60,25 @@
   .logo span:nth-child(3) { color: #d97706; }
   .logo span:nth-child(4) { color: #db2777; }
   .logo span:nth-child(5) { color: #7c3aed; }
+  .lang-switch {
+    display: flex;
+    justify-content: flex-end;
+    gap: 6px;
+    margin-bottom: 8px;
+    font-size: 0.8rem;
+  }
+  .lang-switch a {
+    padding: 3px 11px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    color: var(--text2);
+  }
+  .lang-switch a.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+  }
+  .lang-switch a.active:hover { text-decoration: none; }
   .version {
     color: var(--text2);
     font-size: 0.86rem;
@@ -126,6 +147,11 @@
 </head>
 <body>
 <main>
+
+<div class="lang-switch">
+  <a href="index.html" class="active">FR</a>
+  <a href="index.en.html">EN</a>
+</div>
 
 <div class="logo"><span>A</span><span>T</span><span>E</span><span>Q</span><span>O</span></div>
 
